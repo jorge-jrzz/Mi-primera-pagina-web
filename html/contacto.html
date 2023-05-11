@@ -1,59 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="caja">
-            <h1><img src="../images/logo.png" alt="Logo de la Braberia Alura"></h1>
-            <!-- Etiqueta para la navegacion dentro de nuestra pagina -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="principal-contacto">
-        <form>
+<html lang="es">
 
-            <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Juan Perez">
-            
-            <label for="correoelectronico">Correo electronico</label>
-            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+    <head>
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto</title>
+        <link rel="shortcut icon" href="../images/logo.png">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="../images/logo.png" alt="Logo de la Braberia Alura"></h1>
+                <!-- Etiqueta para la navegacion dentro de nuestra pagina -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <fieldset>
-                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+        <main class="principal-contacto">
+            <form>
+
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="Juan Perez">
                 
-                <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
-                
-                <label for="radio-talefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono</label>
-                
-                <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
-            </fieldset>
-                
-            <fieldset>
-                <legend>¿En que horario le gustaria ser atendido?</legend>
-                <select>
-                    <option>Mañana</option>
-                    <option>Tarde</option>
-                    <option>Noche</option>
-                </select>
-            </fieldset>
+                <label for="correoelectronico">Correo electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                    
+                    <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                    
+                    <label for="radio-talefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                    
+                <fieldset>
+                    <legend>¿En que horario le gustaria ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barbería Alura?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
             <table>
                 <thead>
                     <th>Día</th>
@@ -81,15 +97,9 @@
 
         </main>
 
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barbería Alura?</label>
-
-            <input type="submit" value="Enviar formulario" class="enviar">
-
-        </form>
-    
-    <footer>
-        <img src="../images/logo-blanco.png" alt="Logo de la Braberia Alura en blanco">
-        <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
-    </footer>
-</body>
+        <footer>
+            <img src="../images/logo-blanco.png" alt="Logo de la Braberia Alura en blanco">
+            <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
+        </footer>
+    </body>
 </html>
