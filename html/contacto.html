@@ -20,6 +20,46 @@
             </nav>
         </div>
     </header>
+
+    <main class="principal-contacto">
+        <form>
+
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Juan Perez">
+            
+            <label for="correoelectronico">Correo electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                
+                <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                
+                <label for="radio-talefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>¿En que horario le gustaria ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barbería Alura?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+
+        </form>
     
     <footer>
         <img src="../images/logo-blanco.png" alt="Logo de la Braberia Alura en blanco">
